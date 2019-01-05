@@ -35,6 +35,20 @@ label {
 
 .header-content .logo img {
   width: 300px;
+  -webkit-transition: all 0.6s !important;
+  transition: all 0.6s !important;
+}
+
+@media (max-width: 850px) {
+  .header-content .logo img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-content .logo img {
+    width: 30%;
+  }
 }
 
 .header-content .advertonslider {
@@ -768,9 +782,31 @@ main .road-animation .road #van {
           justify-content: space-between;
 }
 
+@media (max-width: 500px) {
+  .footer .footer-content {
+    border-top: 1px solid #000;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer .footer-content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: unset !important;
+  }
+}
+
 .footer .footer-content .copyR, .footer .footer-content .created {
   font-family: 'Roboto';
   font-size: 16px;
   text-transform: capitalize;
+}
+
+@media (max-width: 850px) {
+  .footer .footer-content .copyR, .footer .footer-content .created {
+    padding: 15px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
